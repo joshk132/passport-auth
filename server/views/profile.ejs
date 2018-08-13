@@ -1,0 +1,21 @@
+<form action="/logout" method="GET" role="form"><input type="submit" value="Log out"></form>
+<form action="/user/delete" method="POST" role="form"><input type="submit" value="Delete account"></form>
+<form action="/user/forgot" method="POST" role="form"><input type="email" value="josh@joshakirby.com"><input type="submit" value="Forgot password"></form>
+
+<div class="container">
+	<div class="col-md-5">
+        <% if(error && error.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+    </div>
+</div>
+
+<h1>current user</h1>
+<%=JSON.stringify(locals.currentUser)%>
