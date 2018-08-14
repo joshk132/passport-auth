@@ -1,7 +1,7 @@
 {
-  "name": "sailhr",
+  "name": "passport-auth",
   "version": "0.1.0",
-  "description": "Simple easy to use HR solution",
+  "description": "Basic passport auth service",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,9 +13,9 @@
   "author": "Josh Kirby",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/joshk132/sail/issues"
+    "url": "https://github.com/joshk132/passport-auth/issues"
   },
-  "homepage": "https://github.com/joshk132/sail#readme",
+  "homepage": "https://github.com/joshk132/passport-auth#readme",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
@@ -37,6 +37,5 @@
     "passport-local-mongoose": "^5.0.1",
     "redis": "^2.8.0",
     "serve-favicon": "^2.5.0",
-    "stripe": "^6.4.0"
   }
 }
