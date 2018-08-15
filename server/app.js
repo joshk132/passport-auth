@@ -11,7 +11,6 @@ const   express = require("express"),
         LocalStrategy = require("passport-local"),
         methodOverride = require("method-override"),
         logger = require('morgan'),
-        favicon = require('serve-favicon'),
         path = require('path'),
         expressValidator = require('express-validator');
         
@@ -47,9 +46,6 @@ app.use(expressValidator());
 
 
 app.use(flash());
-
-
-//app.use(favicon(path.join(__dirname + '/../public/favicon.ico')));
 
 
 
